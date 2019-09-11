@@ -17,3 +17,7 @@ class queue:
         length = len(self.queue)
         print(length)
         return
+
+queue1 = queue()
+queue1.enqueue(12)
+queue1.size()
