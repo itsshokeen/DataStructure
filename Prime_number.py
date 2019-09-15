@@ -1,9 +1,12 @@
-num = int(input())
+def getprime(num):
+    for val in range(2, num):
 
-for i in range(2,num):
-    if i>1:
-        for j in range(2,num):
-            if (i%j)==1:
-                print("not prime number")
-        else:
-            print ("prime",j)
+       # If num is divisible by any number
+       # between 2 and val, it is not prime
+       if val > 1:
+           for n in range(2, val):
+               if (val % n) == 0:
+                   break
+           else:
+               print(val)
+getprime(10)
